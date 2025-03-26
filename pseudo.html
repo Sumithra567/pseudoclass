@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Links with Pseudo-Classes</title>
+  <style>
+    a {
+  text-decoration: none;
+  font-size: 18px;
+  font-family: Arial, sans-serif;
+  padding: 10px;
+  color: black;
+}
+
+
+a:link {
+  color: blue;
+}
+
+
+a:visited {
+  color: purple;
+}
+
+
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+
+
+
+
+
+a:active {
+  color: orange;
+}
+
+
+.link1:link {
+  color: #3498db;
+}
+.link1:visited {
+  color: #9b59b6;
+}
+.link1:hover {
+  color: #e74c3c;
+  text-decoration: underline;
+}
+
+.link1:active {
+  color: #1abc9c;
+}
+
+.link2:link {
+  color: #2ecc71;
+}
+.link2:visited {
+  color: #e67e22;
+}
+.link2:hover {
+  color: #f39c12;
+  text-decoration: underline;
+}
+
+.link2:active {
+  color: #d35400;
+}
+
+.link3:link {
+  color: #e74c3c;
+}
+.link3:visited {
+  color: #c0392b;
+}
+.link3:hover {
+  color: #f1c40f;
+  text-decoration: underline;
+}
+
+.link3:active {
+  color: #9b59b6;
+}
+
+.link4:link {
+  color: #f39c12;
+}
+.link4:visited {
+  color: #e67e22;
+}
+.link4:hover {
+  color: #16a085;
+  text-decoration: underline;
+}
+
+.link4:active {
+  color: #3498db;
+}
+
+.link5:link {
+  color: #1abc9c;
+}
+.link5:visited {
+  color: #16a085;
+}
+.link5:hover {
+  color: #9b59b6;
+  text-decoration: underline;
+}
+/*.link5:focus {
+  outline: 2px solid #f39c12;
+}*/
+.link5:active {
+  color: #e74c3c;
+}
+.link1 {
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+  color: blue;
+}
+
+
+.homeToggle {
+  display: none;
+}
+
+
+.info {
+  display: none;
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #176ba3;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+
+.homeToggle:checked + .info {
+  display: block;
+}
+
+  </style>
+</head>
+<body>
+  <label for="homeToggle" class="link1">Home</label>
+  <input type="checkbox" id="homeToggle" class="homeToggle" />
+  
+  
+  <div class="info">
+    <h2>Welcome to the Home Page</h2>
+    <p>List of home pages</p>
+    <div><ul><li><a href="#about" class="link2">About</a>
+    </li>
+        <li><a href="#services" class="link3">Services</a></li>
+        <li><a href="#contact" class="link4">Contact</a></li>
+        <li><a href="#blog" class="link5">Blog</a></li>
+      </ul></div>
+  </div>
+</body>
+</html>
